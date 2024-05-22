@@ -131,6 +131,7 @@ function htmx_page() {
   <html>
   <head>
   <title>Badcop's Bash Consulting</title>
+  <link rel="icon" type="image/png" href="/static/badcop.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Need bash scripts? Already have too many? I'm available to help.">
   <meta charset="UTF-8">
