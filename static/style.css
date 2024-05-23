@@ -138,6 +138,6 @@ a {
 .email svg {
   height: calc(max(min(5vw, 40pt), 16px));
   width: calc(max(min(5vw, 40pt), 16px));
-  margin-right: 2vw;
-  margin-bottom: -0.7vw;
+  margin-right: 0.4em;
+  margin-bottom: -0.14em;
 }
