@@ -13,7 +13,9 @@ EMAIL_ICON='<svg fill="#000000" height="40px" width="40px" version="1.1" id="Cap
   </g>
 </svg>'
 htmx_page << EOF
-  <h1>Need bash help?</h1>
-  <a href="mailto:me@sarah.engineer" class="email"><p>${EMAIL_ICON}Let's chat.</p></a>
+  <div class="main">
+    <h1>Need bash help?</h1>
+    <a href="mailto:me@sarah.engineer" class="email"><p>${EMAIL_ICON}Let's chat.</p></a>
+  </div>
   <a href="https://x.com/badcop_" class="badcop" target="_blank"><img alt="Badcop's Twitter" src="static/badcop.png" /></a>
 EOF

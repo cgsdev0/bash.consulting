@@ -77,10 +77,59 @@ a {
   bottom: -2vh;
 }
 
+@keyframes popup {
+  0% {
+    margin-bottom: -256px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes fadeup {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0%;
+  }
+  100% {
+    margin-bottom: 0px;
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes faderight {
+  0% {
+    transform: translateX(-10vh);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
+
+.main h1 {
+  animation: fadeup 1s forwards ease-out;
+}
+.main p {
+  transform: translateX(-10vh);
+  opacity: 0%;
+  animation: faderight 1s 1.5s forwards ease-out;
+}
+
 .badcop img {
+  animation: popup 0.8s 2s forwards;
+  margin-bottom: -256px;
+  animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
   width: calc(min(20vh, 256px));
   height: calc(min(20vh, 256px));
   object-fit: contain;
+  transition: scale 0.1s;
+}
+
+.badcop img:hover {
+  scale: 1.1;
 }
 
 .email:hover {
